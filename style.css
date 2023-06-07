@@ -14,7 +14,7 @@ h1,
 h2,
 h3 {
   text-align: center;
-  margin: 0;
+  margin: 20px 40px;
 }
 
 h1 {
@@ -36,6 +36,14 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 70px;
 }
 
 .navigation-links {
@@ -98,4 +106,22 @@ p {
 .col-md-6 {
   flex: 0 0 auto;
   width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .navbar {
+    padding: 0.5rem 10px;
+  }
 }
